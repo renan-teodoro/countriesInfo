@@ -14,16 +14,6 @@ export class CountriesService {
   }
 
   async getCountryDetails(countryCode: string) {
-    const allRequestedData = await Promise.resolve([
-      this.httpService
-        .get(`${process.env.NAGER_URL}/CountryInfo/${countryCode}`)
-        .toPromise(),
-      this.httpService.get(`${process.env.POPULATION_URL}`).toPromise(),
-      this.httpService.get(`${process.env.FLAG_URL}`).toPromise(),
-    ]).then((res) => res[0]);
-
-    console.log(allRequestedData);
-
     const countryInfo = await this.httpService
       .get(`${process.env.NAGER_URL}/CountryInfo/${countryCode}`)
       .toPromise();

@@ -1,0 +1,36 @@
+.country-details {
+  text-align: center;
+  padding: 20px;
+}
+
+.country-details img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.country-details h2 {
+  margin-top: 40px;
+}
+
+.country-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.country-details li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.country-details a {
+  text-decoration: none;
+  color: #0070f3;
+  font-weight: bold;
+}
+
+.country-details a:hover {
+  color: #0056b3;
+}
